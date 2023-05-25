@@ -11,44 +11,75 @@
     <main class="container">
       <div class="calculator">
         <div class="calculator__display">
-          <span class="result">10</span>
+          <span class="result"></span>
         </div>
-        <button class="btn calculator__btn calculator__btn--operation">
-          C
-        </button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          X
-        </button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          %
-        </button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          /
-        </button>
-        <button class="btn calculator__btn">7</button>
-        <button class="btn calculator__btn">8</button>
-        <button class="btn calculator__btn">9</button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          x
-        </button>
-        <button class="btn calculator__btn">4</button>
-        <button class="btn calculator__btn">5</button>
-        <button class="btn calculator__btn">6</button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          -
-        </button>
-        <button class="btn calculator__btn">1</button>
-        <button class="btn calculator__btn">2</button>
-        <button class="btn calculator__btn">3</button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          +
-        </button>
-        <button class="btn calculator__btn calculator__btn--operation">
-          +/-
-        </button>
-        <button class="btn calculator__btn">0</button>
-        <button class="btn calculator__btn">.</button>
-        <button class="btn calculator__btn calculator__btn--equal">=</button>
+        <div class="buttons-container">
+          <button
+            char="clear"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            C
+          </button>
+          <button
+            char="delete"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            X
+          </button>
+          <button
+            char="%"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            %
+          </button>
+          <button
+            char="/"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            /
+          </button>
+          <button char="7" class="btn calculator__btn">7</button>
+          <button char="8" class="btn calculator__btn">8</button>
+          <button char="9" class="btn calculator__btn">9</button>
+          <button
+            char="*"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            x
+          </button>
+          <button char="4" class="btn calculator__btn">4</button>
+          <button char="5" class="btn calculator__btn">5</button>
+          <button char="6" class="btn calculator__btn">6</button>
+          <button
+            char="-"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            -
+          </button>
+          <button char="1" class="btn calculator__btn">1</button>
+          <button char="2" class="btn calculator__btn">2</button>
+          <button char="3" class="btn calculator__btn">3</button>
+          <button
+            char="+"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            +
+          </button>
+          <button
+            char="moreless"
+            class="btn calculator__btn calculator__btn--operation"
+          >
+            +
+          </button>
+          <button char="0" class="btn calculator__btn">0</button>
+          <button char="." class="btn calculator__btn">.</button>
+          <button
+            char="equal"
+            class="btn calculator__btn calculator__btn--equal"
+          >
+            =
+          </button>
+        </div>
       </div>
     </main>
     <script src="calculator.js"></script>

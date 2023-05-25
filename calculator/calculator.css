@@ -38,10 +38,15 @@ body {
   background-color: var(--color-navy-blue);
   border-radius: 1rem;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   padding: 3.2rem;
-  width: 50rem;
+  width: 32rem;
+}
+
+.buttons-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, auto);
 }
 
 .calculator__display {
@@ -78,7 +83,7 @@ body {
   font-family: var(--font-calculator);
   font-size: 2.8rem;
   font-weight: 700;
-  padding: 1.6rem;
+  padding: 1rem;
   transition: all 0.2s;
 }
 
@@ -100,4 +105,46 @@ body {
   background-color: var(--color-red);
   border: none;
   color: white;
+}
+
+.calculator__btn[char='moreless'] {
+  background-color: var(--color-very-light-grey);
+  color: transparent;
+  position: relative;
+}
+
+.calculator__btn[char='moreless']::after {
+  color: var(--color-dark-blue);
+  content: '+/-';
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-----------------*/
+/* #MEDIA QUERIES */
+
+@media screen and (min-width: 575px) {
+  .calculator {
+    width: 42rem;
+  }
+
+  .buttons-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calculator {
+    width: 50rem;
+  }
+
+  .calculator__display {
+    height: 16rem;
+  }
+
+  .calculator__btn {
+    padding: 1.6rem;
+  }
 }

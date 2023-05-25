@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.btn {
+  border: 2px solid #111;
+  border-radius: 1rem;
+  font-size: 4rem;
+  padding: 2rem 4rem;
+}
+
+.clip {
+  clip-path: polygon(
+    0px 5px,
+    1px 5px,
+    1px 3px,
+    2px 3px,
+    2px 2px,
+    3px 2px,
+    3px 1px,
+    4px 1px,
+    5px 1px,
+    5px 0px
+  );
+}
+
+.btn {
+}
